@@ -1,0 +1,10 @@
+﻿global using Dapper;
+global using Domain;
+global using Domain.Abstract.Repositories;
+global using Infrastructure.Repositories.Generic;
+global using Microsoft.Data.SqlClient;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.Logging;
+global using System.Data;
