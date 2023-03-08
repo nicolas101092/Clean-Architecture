@@ -5,6 +5,6 @@ namespace Application.Contracts.Dto.WeatherForecast.Request
     public class RequestGetAllWeatherForecastDto : DtoListFiltersBase
     {
         public string OrderBy { get; set; } = "Id";
-        public bool isDescending { get; set; }
+        public bool IsDescending { get; set; }
     }
 }

@@ -21,4 +21,8 @@
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+	<InternalsVisibleTo Include="Test.Unit" />
+  </ItemGroup>
+
 </Project>

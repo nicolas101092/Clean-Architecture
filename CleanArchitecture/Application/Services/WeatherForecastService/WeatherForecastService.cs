@@ -9,7 +9,7 @@ namespace Application.Services.WeatherForecastService
     /// <summary>
     /// WeatherForecast's service
     /// </summary>
-    internal class WeatherForecastService : IWeatherForecastService
+    public class WeatherForecastService : IWeatherForecastService
     {
         #region Properties
 
@@ -78,7 +78,7 @@ namespace Application.Services.WeatherForecastService
         public async Task<DtoBasePagination<ResponseGetWeatherForecastDto>> GetListAsync(RequestGetAllWeatherForecastDto request)
         {
             _logger.LogInformation($"{nameof(WeatherForecastService)} - Started method {nameof(GetListAsync)}");
-            var result = await _weatherForecastRepository.GetListAsync(request.PageSize, request.CurrentPage, request.IsPaged, request.OrderBy, request.isDescending);
+            var result = await _weatherForecastRepository.GetListAsync(request.PageSize, request.CurrentPage, request.IsPaged, request.OrderBy, request.IsDescending);
 
             return await GetDtoBasePagination(request, result);
         }
